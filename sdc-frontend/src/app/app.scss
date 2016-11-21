@@ -16,6 +16,7 @@
 
 $primary-color-blue: #003865;
 $primary-color-orange: #DC6B2F;
+$secondary-color-blue: #ADBFCD;
 
 html, body {
   font-family: Tahoma, Verdana, Segoe, sans-serif;
@@ -61,4 +62,17 @@ input[type=password] {
   border-radius: 20px 20px;
   padding: 14px 35px;
   margin: 35px;
+}
+
+#thirdbtn {
+  border-radius: 50%;
+  background-color: $secondary-color-blue
+}
+
+/****** HEADER und FOOTER ******/
+.header-class {
+  background-color: $primary-color-blue;
+}
+.footer-class, .secondary-footer-class {
+  background-color: $secondary-color-blue;
 }
