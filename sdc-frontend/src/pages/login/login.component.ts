@@ -5,7 +5,7 @@ import { StartpageComponent } from '../startpage/startpage.component';
 
 @Component({
   selector: 'page-login',
-  templateUrl: './login.component.html'
+  templateUrl: 'login.component.html'
 })
 
 export class LoginComponent {

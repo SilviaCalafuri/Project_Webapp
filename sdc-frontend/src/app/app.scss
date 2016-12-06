@@ -64,15 +64,15 @@ input[type=password] {
   margin: 35px;
 }
 
-#thirdbtn {
+.thirdbtn {
   border-radius: 50%;
   background-color: $secondary-color-blue
 }
 
 /****** HEADER und FOOTER ******/
-.header-class {
+ion-header {
   background-color: $primary-color-blue;
 }
-.footer-class, .secondary-footer-class {
+ion-footer, .secondary-footer-class {
   background-color: $secondary-color-blue;
 }
