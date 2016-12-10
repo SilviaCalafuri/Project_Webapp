@@ -1,24 +1,19 @@
-.login-class {
-  .form {
-    	background: #FFFFFF;
-    	margin: 30% 5%;
-    	text-align: center;
-  }
-
-  h1 {
+.login-form {
+  text-align: center;
+  ion-title {
     margin-bottom: 10%;
+    margin-top: 40%;
   }
-
 }
 
-.logo-class {
-  width: 90%;
+/****** LOGO ******/
+.secondary-footer {
   position: absolute;
   bottom: 0;
-  height: 60px;
 
   img {
     width: 30%;
     float: right;
+    margin-right: 10%;
   }
 }

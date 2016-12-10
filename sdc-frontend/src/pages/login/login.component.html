@@ -1,53 +1,20 @@
-<ion-content padding>
-	<div class="login-class">
-		<div class="form">
-	  		<h1>Time tracker</h1>
-	    	<form class="register-form">
-	      		<input type="text" placeholder="username"/>
-	      		<input type="password" placeholder="password"/>
-	      		<!-- <p class="secondarymsg"><a href="#">Passwort vergessen?</a></p> -->
-	      		<button id="primarybtn">anmelden</button>
-	   		</form>
-		</div>
-	  <button (click)="navigate()">redirect</button>
-	  <div class="logo-class">
-	    <img src="/assets/images/sdc-logo.jpg">
-	  </div>
-	</div>
+<ion-content class="login-form">
+    <ion-title>Time Tracking</ion-title>
+  <form #FormLogin="ngForm" (ngSubmit)="login(FormLogin)">
+    <ion-item>
+      <ion-label floating>Username</ion-label>
+      <ion-input [(ngModel)]="FormLogin.username" name="userId" type="text" required></ion-input>
+    </ion-item>
+    <ion-item>
+      <ion-label floating>Password</ion-label>
+      <ion-input [(ngModel)]="FormLogin.password" name="userPassword" type="password" required></ion-input>
+    </ion-item>
+
+    <button id="primarybtn" [disabled]="!FormLogin.form.valid" type="submit">Login</button>
+
+  </form>
 </ion-content>
 
-<!--
-<ion-content>
-	<form #loginForm="ngForm" novalidate>
-		<ion-list no-lines>
-			<ion-item>
-				<ion-label stacked color="primary">Username</ion-label>
-				<ion-input [(ngModel)]="login.username" name="username" type="text" #username="ngModel" spellcheck="false" autocapitalize="off"
-					required>
-				</ion-input>
-			</ion-item>
-			<p [hidden]="username.valid || submitted == false" color="danger" padding-left>
-				Username is required
-			</p>
-
-			<ion-item>
-				<ion-label stacked color="primary">Password</ion-label>
-				<ion-input [(ngModel)]="login.password" name="password" type="password" #password="ngModel" required>
-				</ion-input>
-			</ion-item>
-			<p [hidden]="password.valid || submitted == false" color="danger" padding-left>
-				Password is required
-			</p>
-		</ion-list>
-
-		<ion-row responsive-sm>
-			<ion-col>
-				<button ion-button (click)="onLogin(loginForm)" type="submit" block>Login</button>
-			</ion-col>
-			<ion-col>
-				<button ion-button (click)="onSignup()" color="light" block>Signup</button>
-			</ion-col>
-		</ion-row>
-	</form>
-
-</ion-content> -->
+<ion-footer class="secondary-footer">
+  <img src="assets/images/sdc-logo.jpg">
+</ion-footer>

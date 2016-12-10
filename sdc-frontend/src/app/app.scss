@@ -23,7 +23,7 @@ html, body {
 }
 
 /****** FONT ******/
-h1 {
+ion-title .toolbar-title {
   font-size: 24px;
   color: $primary-color-blue;
 }
@@ -41,13 +41,13 @@ p {
 }
 
 /****** INPUT FIELDS ******/
-input[type=text],
-input[type=password] {
-  width: 100%;
-  height: 40px;
-  border: none;
-  border-bottom: 1px solid #E9E9E9;
-  margin: 10px auto;
+.item-input {
+  padding-right: 16px;
+  padding-left: 16px;
+}
+
+.text-input {
+  font-size: 14px;
 }
 
 /****** BUTTON ******/
@@ -73,6 +73,6 @@ input[type=password] {
 ion-header {
   background-color: $primary-color-blue;
 }
-ion-footer, .secondary-footer-class {
+.primary-footer{
   background-color: $secondary-color-blue;
 }

@@ -1,6 +1,7 @@
 //hier werden alle die Component definiert
 import { NgModule } from '@angular/core';
 import { IonicApp, IonicModule } from 'ionic-angular';
+import { Auth } from '../_services/auth';
 
 //import { routing } from './app.routes';
 import { MyApp } from './app.component';
@@ -29,6 +30,6 @@ import { FooterComponent } from '../pages/footer/footer.component';
     HeaderComponent,
     FooterComponent
   ],
-  providers: []
+  providers: [Auth]
 })
 export class AppModule {}
